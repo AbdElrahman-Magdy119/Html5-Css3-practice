@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div data-id=""></div>
+    <img src="2.jpg" style="width:100px;" onclick="Increment(this)" data-clicks="0" data-xyz="any data">
+    <img src="2.jpg" style="width:100px;" onclick="Increment(this)" data-clicks="0">
+    <!-- <input type="button" onclick="ShowClickNumber()" value="-- Get Click Count">
+     -->
+    <script>
+        //var counter=0;
+        function Increment(elem){
+            //get old value 
+            var counter = elem.getAttribute("data-clicks");
+            //increament
+            counter=parseInt(counter)+1 ; 
+            //set new value in attribute
+            elem.setAttribute("data-clicks",counter);
+            console.log(counter);
+          //  counter++;
+        }
+        function ShowClickNumber(){
+            //alert(counter);
+        }
+    </script>
+</body>
+</html>

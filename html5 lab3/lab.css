@@ -1,0 +1,87 @@
+
+/* div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+div:hover{
+    transform: translate(250px,250px)  rotate(270deg) scaleX(2)     ;
+    font-size: 15px;
+} */
+
+
+
+
+
+img{
+    width: 100px;
+    height: 100px;
+    transition: 3s;
+    transition-delay: 1s;
+}
+img:hover{
+     
+    transform: scale(2,2);
+    transform-origin: 0 0;
+} 
+
+
+
+
+
+/* #p{
+  column-count: 6;
+  column-rule: 3px solid red;
+  column-gap: 4px;
+} */
+
+
+
+
+
+
+
+/* 
+img{
+    position: relative;
+     width: 150px;
+     height: 100px;
+     left: 100px;
+     top: 100px;
+    animation-name: ani;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes ani {
+    25%{left: 400px; top: 100px;}
+    50%{left: 400px; top: 400px;}
+    75%{left: 100px; top: 400px;}
+  100%{ left: 100px; top: 100px;} 
+}  */
+
+
+
+
+
+
+ /* ul li{
+    margin-top: 20px;
+    list-style-type: none;
+    display:inline-block;
+    transition: 2s;
+    width: 200px;
+    height: 40px;
+    background-color: gray;
+}
+ li:hover{
+     
+    background-color: rgb(24, 224, 24);
+}   */
+
+
+
+@keyframes icon {
+    0%{width: 5px;height: 5px}
+  100%{width: 0px;height: 0px} 
+}

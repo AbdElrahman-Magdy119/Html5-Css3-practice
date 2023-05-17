@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" style="width:700px;height:400px;border:2px solid red">
+        
+    </canvas>
+    <script>
+        //1 get canavase
+        var canvas=document.getElementById("myCanvas");//كشكول الرسم
+        console.log(canvas);
+        //1 2d / 3d
+        var ctx = canvas.getContext("2d");//الورقه الفاضيه
+        console.log(ctx);
+        //draw image
+        var img=new Image();//document.getelementbyId()
+        img.src="2.jpg";
+        img.onload=function(){
+            ctx.drawImage(img,50,50,100,100);//(objct ,x ,y ,width,height);
+        }
+
+        //canvas setting 
+        // ctx.fillStyle='#ff0000';
+        // ctx.strokeStyle='#00ff00';
+        // ctx.lineWidth=1;
+
+        //Draw REctangle
+        //ctx.rect(50,50,100,50);
+        //ctx.rect(100,100,20,20);
+        //ctx.stroke(); //border
+        //ctx.fill();   //background
+        //ctx.fillRect(50,50,100,50);
+        //ctx.strokeRect(50,50,100,50);
+        //ctx.clearRect(75,75,30,30);
+        
+        //Draw Line
+        // ctx.beginPath();
+        // ctx.moveTo(50,50);//start point
+        // ctx.lineTo(100,100);//end point
+        // ctx.strokeStyle="#0000ff";
+        // ctx.lineWidth=2;
+        // ctx.stroke();
+        
+        //Arc
+        // ctx.arc(100,100,25,0,Math.PI,false );
+        // ctx.stroke();
+        
+        //Enter text
+        // ctx.font="30px Tahoma";
+        // ctx.fillText("ITI",100,100);
+        // ctx.strokeText("ITI",100,100);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio src="notification.mp3" id="audio1" ></audio>
+    <input type="button" value="play" onclick="audioPlay()"> 
+    <input type="button" value="pause" onclick="audiopause()"><br><br>
+    <video src="20d164b4-14c1-4f4b-befe-a6655069af22.mp4"  style="width: 200px;height: 200px;"  id="video1" ></video>
+    <input type="button" value="play" onclick="videoPlay()"> 
+    <input type="button" value="pause" onclick="videopause()"><br><br>
+
+    <label>URL</label>      <input type="url" name="u1" placeholder="this is url">
+
+
+
+    <script>
+        function audioPlay(){
+             document.getElementById("audio1").play();
+        } 
+         function audiopause(){
+            document.getElementById("audio1").pause();
+         }
+        
+         function videoPlay(){
+             document.getElementById("video1").play();
+        } 
+         function videopause(){
+            document.getElementById("video1").pause();
+         }
+
+     </script>
+</body>
+</html>
